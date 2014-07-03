@@ -1,0 +1,61 @@
+{
+  var nodes = {
+    splits: [],
+    icons: []
+  };
+}
+
+wsplit_file
+  = title_line attempts_line offset_line size_line splits* icons_line { return nodes; }
+
+title_line
+  = 'Title=' t:title newline { nodes.title = t; }
+
+attempts_line
+  = 'Attempts=' a:attempts newline { nodes.attempts = a; }
+
+offset_line
+  = 'Offset=' o:offset newline { nodes.offset = o; }
+
+size_line
+  = 'Size=' s:size newline { nodes.size = s; }
+
+splits
+  = t:title ',' o:old_time ',' r:run_time ',' b:best_time newline { nodes.splits.push({ title: t, oldTime: o, runTime: r, bestTime: b }); }
+
+icons_line
+  = 'Icons=' ('"' icon '",')* '"' icon '"' newline?
+
+title
+  = chars:[^,\r\n]* { return chars.join(''); }
+
+attempts
+  = digits:[0-9]+ { return parseInt(digits.join(''), 10); }
+
+offset
+  = digits:([0-9]+ '.' [0-9]+) { return parseFloat(digits.join(''), 10); }
+
+size
+  = s:(DIGITS ',' DIGITS) { return s.join('').split(','); }
+
+old_time
+  = time
+
+run_time
+  = time
+
+best_time
+  = time
+
+time
+  = digits:(DIGITS '.'? DIGITS*) { return parseFloat(digits.join(''), 10); }
+
+icon
+  = chars:[^"\r\n]* { nodes.icons.push(chars.join('')); return chars.join(''); }
+
+DIGIT = [0-9]
+DIGITS = d:[0-9]+ { return d.join('') }
+
+newline
+  = '\r\n'
+  / '\n'

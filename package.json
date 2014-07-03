@@ -1,0 +1,26 @@
+{
+  "name": "wsplit",
+  "version": "0.0.0",
+  "description": "Wsplit file parser",
+  "keywords": [
+    "parser",
+    "speedrun",
+    "wsplit"
+  ],
+  "repository": "KenanY/wsplit",
+  "license": "MIT",
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "main": "index.js",
+  "directories": {
+    "generate": "pegjs --cache src/wsplit.peg lib/parser.js",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/index.js"
+  },
+  "devDependencies": {
+    "lodash.isfunction": "^2.4.1",
+    "pegjs": "^0.8.0",
+    "tape": "^2.13.3"
+  }
+}
