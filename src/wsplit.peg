@@ -33,7 +33,7 @@ attempts
   = digits:[0-9]+ { return parseInt(digits.join(''), 10); }
 
 offset
-  = digits:([0-9]+ '.' [0-9]+) { return parseFloat(digits.join(''), 10); }
+  = digits:([0-9]+ '.' [0-9]+) { return parseFloat(digits.join('')); }
 
 size
   = s:(DIGITS ',' DIGITS) { return s.join('').split(','); }
@@ -48,7 +48,7 @@ best_time
   = time
 
 time
-  = digits:(DIGITS '.'? DIGITS*) { return parseFloat(digits.join(''), 10); }
+  = digits:(DIGITS '.'? DIGITS*) { return parseFloat(digits.join('')); }
 
 icon
   = chars:[^"\r\n]* { nodes.icons.push(chars.join('')); return chars.join(''); }
