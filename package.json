@@ -16,10 +16,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tape test/index.js"
+    "test": "tape test/*.js"
   },
   "devDependencies": {
     "lodash.isfunction": "^2.4.1",
+    "lodash.isplainobject": "^2.4.1",
     "pegjs": "^0.8.0",
     "tape": "^2.13.3"
   }

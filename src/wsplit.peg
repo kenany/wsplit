@@ -21,7 +21,7 @@ size_line
   = 'Size=' s:size newline { nodes.size = s; }
 
 splits
-  = t:title ',' o:old_time ',' r:run_time ',' b:best_time newline { nodes.splits.push({ title: t, oldTime: o, runTime: r, bestTime: b }); }
+  = t:title ',' o:old_time ',' r:run_time ',' b:best_time newline { nodes.splits.push({ title: t, splitTime: r, duration: b }); }
 
 icons_line
   = 'Icons=' ('"' icon '",')* '"' icon '"' newline?
