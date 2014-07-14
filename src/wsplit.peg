@@ -33,7 +33,7 @@ attempts
   = digits:[0-9]+ { return parseInt(digits.join(''), 10); }
 
 offset
-  = digits:([0-9]+ '.' [0-9]+) { return parseFloat(digits.join('')); }
+  = digits1:[0-9]+ '.' digits2:[0-9]+ { return parseFloat(digits1.join('') + '.' + digits2.join('')); }
 
 size
   = s:(DIGITS ',' DIGITS) { return s.join('').split(','); }
