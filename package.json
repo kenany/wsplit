@@ -12,10 +12,10 @@
   "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
   "main": "index.js",
   "directories": {
-    "generate": "pegjs --cache src/wsplit.peg lib/parser.js",
     "test": "test"
   },
   "scripts": {
+    "generate": "pegjs --cache src/wsplit.peg lib/parser.js",
     "test": "tape test/*.js"
   },
   "devDependencies": {
