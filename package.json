@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "lodash.isfunction": "^3.0.1",
-    "lodash.isplainobject": "^2.4.1",
+    "lodash.isplainobject": "^3.0.0",
     "pegjs": "^0.8.0",
     "tape": "^2.13.3"
   }
