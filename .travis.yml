@@ -10,3 +10,4 @@ branches:
 before_install:
   - npm install -g npm
   - npm --version
+sudo: false
