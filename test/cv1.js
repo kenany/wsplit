@@ -10,12 +10,12 @@ var expected = {
   offset: 9.35,
   size: [152, 25],
   splits: [
-    { title: 'Bat', splitTime: 98.491084, duration: 98.491084 },
-    { title: 'Medusa', splitTime: 226.837254, duration: 128.34617 },
-    { title: 'Mummies', splitTime: 364.584693, duration: 137.747439 },
-    { title: 'Frankenstien', splitTime: 494.721415, duration: 130.13672199999996 },
-    { title: 'Death', splitTime: 756.304396, duration: 261.582981 },
-    { title: 'Dracula', splitTime: 1052.755874, duration: 296.45147799999995 }
+    { title: 'Bat', time: 98.491084, best: 98.491084 },
+    { title: 'Medusa', time: 226.837254, best: 128.34617 },
+    { title: 'Mummies', time: 364.584693, best: 137.747439 },
+    { title: 'Frankenstien', time: 494.721415, best: 130.13672199999996 },
+    { title: 'Death', time: 756.304396, best: 261.582981 },
+    { title: 'Dracula', time: 1052.755874, best: 296.45147799999995 }
   ],
   icons: ['', '', '', '', '', '']
 };
