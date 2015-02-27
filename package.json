@@ -11,6 +11,10 @@
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
   "main": "index.js",
+  "files": [
+    "lib/parser.js",
+    "index.js"
+  ],
   "directories": {
     "test": "test"
   },
