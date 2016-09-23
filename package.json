@@ -19,13 +19,14 @@
     "test": "test"
   },
   "scripts": {
-    "generate": "pegjs --cache src/wsplit.peg lib/parser.js",
+    "generate": "pegjs -o lib/parser.js src/wsplit.peg",
+    "pretest": "npm run -s generate",
     "test": "tape test/*.js"
   },
   "devDependencies": {
     "lodash.isfunction": "^3.0.1",
     "lodash.isplainobject": "^4.0.6",
-    "pegjs": "^0.8.0",
+    "pegjs": "^0.10.0",
     "tape": "^3.5.0"
   }
 }

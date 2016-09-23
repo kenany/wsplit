@@ -24,7 +24,7 @@ splits
   = t:title ',' o:old_time ',' r:run_time ',' b:best_time newline { nodes.splits.push({ title: t, time: r, best: b }); }
 
 icons_line
-  = 'Icons=' ('"' icon '",')* '"' icon '"' newline?
+  = 'Icons=' '"' icon '"' (',"' icon '"')* newline?
 
 title
   = chars:[^,\r\n]* { return chars.join(''); }
