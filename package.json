@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@kenan/renovate-config": "1.4.0",
-    "lodash.isfunction": "^3.0.1",
+    "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
     "tape": "^4.6.0"
