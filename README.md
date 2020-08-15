@@ -1,7 +1,5 @@
 # wsplit
 
-[![Build Status](https://travis-ci.org/KenanY/wsplit.svg)](https://travis-ci.org/KenanY/wsplit)
-
 Wsplit file parser.
 
 ## Example
