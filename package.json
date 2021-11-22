@@ -31,6 +31,6 @@
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
-    "tape": "^5.3.1"
+    "tape": "^5.3.2"
   }
 }
