@@ -9,7 +9,7 @@
   ],
   "repository": "KenanY/wsplit",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "main": "index.js",
   "files": [
     "lib/parser.js",
@@ -19,18 +19,23 @@
     "test": "test"
   },
   "engines": {
-    "node": "10 || 12 || >=14"
+    "node": "12 || 14 || >=16"
   },
   "scripts": {
     "generate": "pegjs -o lib/parser.js src/wsplit.peg",
+    "release": "semantic-release",
     "pretest": "npm run -s generate",
     "test": "tape test/*.js"
   },
   "devDependencies": {
     "@kenan/renovate-config": "^1.5.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
+    "semantic-release": "^18.0.0",
     "tape": "^5.3.2"
   }
 }
