@@ -1,10 +1,10 @@
-var wsplit = require('../');
-var test = require('tape');
-var fs = require('fs');
-var path = require('path');
-var isPlainObject = require('lodash.isplainobject');
+const wsplit = require('../');
+const test = require('tape');
+const fs = require('fs');
+const path = require('path');
+const isPlainObject = require('lodash.isplainobject');
 
-var expected = {
+const expected = {
   title: 'Sonic After the Sequel Sonic - Story Mode',
   attempts: 14,
   offset: 0.0,
@@ -24,13 +24,14 @@ var expected = {
   icons: ['', '', '', '', '', '', '', '', '', '']
 };
 
-test('parses a sonicats run', function(t) {
+test('parses a sonicats run', (t) => {
   t.plan(3);
-  var str = fs.readFileSync(path.resolve(__dirname, 'fixtures', 'sonicats.wsplit'), 'utf8');
-  t.doesNotThrow(function() {
-    wsplit(str);
-  });
-  var actual = wsplit(str);
+  const str = fs.readFileSync(
+    path.resolve(__dirname, 'fixtures', 'sonicats.wsplit'),
+    'utf8'
+  );
+  t.doesNotThrow(() => wsplit(str));
+  const actual = wsplit(str);
   t.ok(isPlainObject(actual));
   t.deepEqual(actual, expected);
 });

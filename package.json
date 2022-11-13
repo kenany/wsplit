@@ -19,7 +19,7 @@
     "test": "test"
   },
   "engines": {
-    "node": "12 || 14 || >=16"
+    "node": "14 || 16 || >=18"
   },
   "scripts": {
     "generate": "pegjs -o lib/parser.js src/wsplit.peg",

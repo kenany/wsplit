@@ -1,8 +1,8 @@
-var wsplit = require('../');
-var test = require('tape');
-var isFunction = require('lodash.isfunction');
+const wsplit = require('../');
+const test = require('tape');
+const isFunction = require('lodash.isfunction');
 
-test('exports a function', function(t) {
+test('exports a function', (t) => {
   t.plan(1);
   t.ok(isFunction(wsplit));
 });
