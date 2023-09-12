@@ -30,7 +30,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^6.1.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
