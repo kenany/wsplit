@@ -7,7 +7,7 @@
     "speedrun",
     "wsplit"
   ],
-  "repository": "KenanY/wsplit",
+  "repository": "github:kenany/wsplit",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "test": "test"
   },
   "engines": {
-    "node": "14 || 16 || >=18"
+    "node": "18 || >=20"
   },
   "scripts": {
     "generate": "pegjs -o lib/parser.js src/wsplit.peg",
@@ -30,11 +30,11 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^6.1.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
-    "semantic-release": "^21.0.7",
+    "semantic-release": "^22.0.1",
     "tape": "^5.6.6"
   }
 }
