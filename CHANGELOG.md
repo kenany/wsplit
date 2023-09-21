@@ -1,3 +1,14 @@
+## [6.0.0](https://github.com/kenany/wsplit/compare/5.0.0...6.0.0) (2023-09-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v14 and v16 are no longer supported.
+
+### Features
+
+* drop Node.js v14 and v16 ([55a2089](https://github.com/kenany/wsplit/commit/55a2089abb62d8594b5235a2b1f6d941ff8160d6))
+
 ## [5.0.0](https://github.com/KenanY/wsplit/compare/4.0.0...5.0.0) (2022-11-13)
 
 
