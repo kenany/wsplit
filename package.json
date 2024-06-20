@@ -35,6 +35,6 @@
     "lodash.isplainobject": "^4.0.6",
     "pegjs": "^0.10.0",
     "semantic-release": "^24.0.0",
-    "tape": "^5.7.5"
+    "tape": "^5.8.1"
   }
 }
