@@ -28,13 +28,13 @@
     "test": "tape test/*.js"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^9.1.0",
-    "lodash.isfunction": "^3.0.9",
-    "lodash.isplainobject": "^4.0.6",
-    "pegjs": "^0.10.0",
-    "semantic-release": "^25.0.0",
-    "tape": "^5.9.0"
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "conventional-changelog-conventionalcommits": "9.1.0",
+    "lodash.isfunction": "3.0.9",
+    "lodash.isplainobject": "4.0.6",
+    "pegjs": "0.10.0",
+    "semantic-release": "25.0.2",
+    "tape": "5.9.0"
   }
 }
