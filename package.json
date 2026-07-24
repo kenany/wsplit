@@ -28,8 +28,8 @@
     "test": "tape test/*.js"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
+    "@semantic-release/changelog": "7.0.0",
+    "@semantic-release/git": "11.0.0",
     "conventional-changelog-conventionalcommits": "9.3.1",
     "lodash.isfunction": "3.0.9",
     "lodash.isplainobject": "4.0.6",
